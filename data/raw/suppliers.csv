@@ -1,0 +1,101 @@
+supplier_id,supplier_name,city,state,country,payment_terms_days,supplier_rating,lead_time_days,contract_status
+SUP0001,"Choudhury, Bakshi and Maharaj",Pune,Maharashtra,India,45,3.44,10,Active
+SUP0002,Kapoor and Sons,Bengaluru,Gujarat,India,15,4.88,24,Active
+SUP0003,"Chaudry, Chahal and Sami",Noida,Telangana,India,15,4.33,3,Active
+SUP0004,Balan Inc,Delhi,Karnataka,India,90,4.0,22,Active
+SUP0005,Kaul PLC,Nagpur,Karnataka,India,90,2.89,16,Active
+SUP0006,"Bala, Issac and Saini",Nashik,Tamil Nadu,India,45,2.89,28,Active
+SUP0007,Sen PLC,Bengaluru,Gujarat,India,60,2.65,13,Active
+SUP0008,Ahuja-Dutta,Bengaluru,Karnataka,India,45,4.67,6,Active
+SUP0009,"Sami, Oak and Mall",Ahmedabad,Maharashtra,India,45,4.0,30,Active
+SUP0010,Kale LLC,Noida,Delhi,India,15,4.27,26,Expired
+SUP0011,Chanda Group,Nagpur,Maharashtra,India,60,2.55,5,Active
+SUP0012,Parmer LLC,Noida,Uttar Pradesh,India,45,4.92,21,Active
+SUP0013,"Lalla, Bassi and Sharaf",Pune,Maharashtra,India,30,4.58,27,Active
+SUP0014,"Dash, Radhakrishnan and Brar",Pune,Uttar Pradesh,India,30,3.03,30,Active
+SUP0015,"Memon, Pathak and Handa",Ahmedabad,Delhi,India,60,,23,Active
+SUP0016,"Boase, Bath and Kari",Bengaluru,Delhi,India,45,2.96,9,Active
+SUP0017,Buch-Kaul,Pune,Tamil Nadu,India,30,3.26,20,Active
+SUP0018,Rai LLC,Bengaluru,Telangana,India,60,3.81,11,Active
+SUP0019,Patla-Gaba,Chennai,Uttar Pradesh,India,15,3.58,10,Active
+SUP0020,Pant-Kadakia,Chennai,Telangana,India,45,,5,Active
+SUP0021,"Loke, Bora and Garg",Noida,Gujarat,India,45,4.03,9,Expired
+SUP0022,"Konda, Gade and Shere",Ahmedabad,Gujarat,India,60,2.85,7,Active
+SUP0023,Madan-Kanda,Bengaluru,Karnataka,India,90,3.23,20,Active
+SUP0024,"Nair, Bhalla and Karnik",Noida,Telangana,India,90,3.42,15,Active
+SUP0025,Mutti Group,Delhi,Karnataka,India,90,3.64,18,Active
+SUP0026,Bhatti-Kakar,Mumbai,Uttar Pradesh,India,15,4.46,7,Active
+SUP0027,"Murty, Kala and Tata",Ahmedabad,Tamil Nadu,India,15,3.0,15,Expired
+SUP0028,Shanker-Dhar,Noida,Telangana,India,90,3.79,11,Active
+SUP0029,Dewan-Koshy,Pune,Gujarat,India,90,3.98,27,Active
+SUP0030,"Yohannan, Lall and Sangha",Chennai,Maharashtra,India,45,2.62,16,Active
+SUP0031,"Rastogi, Pathak and Kanda",Nashik,Maharashtra,India,45,4.02,19,Active
+SUP0032,Upadhyay Group,Nagpur,Maharashtra,India,45,2.93,29,Active
+SUP0033,Batta Inc,Bengaluru,Delhi,India,30,2.66,20,Active
+SUP0034,Dutta Ltd,Noida,Delhi,India,60,4.87,3,Active
+SUP0035,Bhatt-Rajan,Chennai,Uttar Pradesh,India,45,4.91,10,Active
+SUP0036,Sidhu-Wadhwa,Delhi,Tamil Nadu,India,15,4.52,5,Expired
+SUP0037,Apte-Contractor,Pune,Uttar Pradesh,India,90,,27,Active
+SUP0038,"Yadav, Loke and Oak",Bengaluru,Gujarat,India,60,2.74,20,Active
+SUP0039,Memon Group,Hyderabad,Tamil Nadu,India,90,4.21,16,Active
+SUP0040,Setty Inc,Nagpur,Uttar Pradesh,India,30,3.6,25,Active
+SUP0041,"Lall, Tella and Gokhale",Ahmedabad,Gujarat,India,45,2.81,17,Expired
+SUP0042,"Cherian, Misra and Tripathi",Pune,Karnataka,India,30,3.74,5,Active
+SUP0043,"Issac, Dua and Prakash",Mumbai,Tamil Nadu,India,90,2.59,10,Active
+SUP0044,Zacharia PLC,Mumbai,Maharashtra,India,15,4.77,10,Active
+SUP0045,Naik Group,Mumbai,Uttar Pradesh,India,45,3.15,5,Active
+SUP0046,Choudhury LLC,Hyderabad,Gujarat,India,60,4.16,9,Active
+SUP0047,Khatri-Bhardwaj,Noida,Tamil Nadu,India,60,3.28,10,Expired
+SUP0048,Brar Inc,Ahmedabad,Karnataka,India,15,3.8,6,Expired
+SUP0049,"Sunder, Biswas and Walia",Chennai,Telangana,India,60,3.87,17,Active
+SUP0050,Dave Ltd,Pune,Maharashtra,India,60,2.96,26,Active
+SUP0051,Gandhi-Lanka,Pune,Karnataka,India,30,4.92,9,Expired
+SUP0052,"Sampath, Kakar and Zacharia",Bengaluru,Telangana,India,30,4.44,11,Expired
+SUP0053,"Iyer, Muni and Rastogi",Delhi,Uttar Pradesh,India,15,4.85,17,Active
+SUP0054,"Prakash, Sarma and Varughese",Mumbai,Gujarat,India,90,4.74,29,Active
+SUP0055,Dara-Kota,Pune,Uttar Pradesh,India,30,3.99,8,Expired
+SUP0056,Bhatt LLC,Nashik,Telangana,India,30,4.8,30,Expired
+SUP0057,Karpe PLC,Mumbai,Karnataka,India,60,2.72,3,Expired
+SUP0058,Amble Inc,Hyderabad,Uttar Pradesh,India,60,2.99,12,Expired
+SUP0059,"Bhargava, Karnik and Bir",Nagpur,Gujarat,India,60,2.61,7,Active
+SUP0060,Narayanan Inc,Hyderabad,Karnataka,India,15,3.31,21,Active
+SUP0061,"Khanna, Mallick and Sunder",Chennai,Maharashtra,India,15,3.47,21,Expired
+SUP0062,Zacharia and Sons,Nagpur,Uttar Pradesh,India,90,,8,Active
+SUP0063,"Solanki, Kibe and Solanki",Nagpur,Maharashtra,India,30,4.57,5,Active
+SUP0064,Gupta-Chandra,Delhi,Telangana,India,15,3.39,21,Active
+SUP0065,Sankar LLC,Noida,Tamil Nadu,India,15,3.2,22,Active
+SUP0066,Roy-Sibal,Ahmedabad,Gujarat,India,90,3.86,21,Active
+SUP0067,"Bhagat, Chaudhari and Bhat",Hyderabad,Karnataka,India,45,2.85,10,Active
+SUP0068,Nori-Chopra,Ahmedabad,Karnataka,India,45,4.51,17,Active
+SUP0069,Handa and Sons,Pune,Maharashtra,India,60,2.69,22,Active
+SUP0070,"Sen, Dey and Sami",Pune,Tamil Nadu,India,30,4.97,19,Active
+SUP0071,Mallick Group,Bengaluru,Delhi,India,15,4.43,10,Active
+SUP0072,Borra Group,Hyderabad,Karnataka,India,60,3.0,29,Active
+SUP0073,"Chaudhari, Bedi and Zachariah",Noida,Uttar Pradesh,India,90,2.51,3,Active
+SUP0074,Chander and Sons,Pune,Karnataka,India,45,4.54,6,Active
+SUP0075,Ray Group,Nagpur,Karnataka,India,45,4.27,12,Active
+SUP0076,Kala-Rattan,Chennai,Karnataka,India,45,4.32,19,Expired
+SUP0077,Gala Group,Hyderabad,Uttar Pradesh,India,15,4.43,5,Expired
+SUP0078,Ramakrishnan LLC,Hyderabad,Maharashtra,India,15,2.69,13,Active
+SUP0079,Mangal-Sampath,Hyderabad,Karnataka,India,60,3.4,20,Expired
+SUP0080,"Sur, Dubey and Gupta",Nagpur,Maharashtra,India,15,2.79,5,Active
+SUP0081,Kalla-Bhardwaj,Nagpur,Maharashtra,India,45,4.66,21,Active
+SUP0082,"Bhat, Murthy and Bhandari",Ahmedabad,Karnataka,India,15,4.06,12,Active
+SUP0083,Sood PLC,Mumbai,Delhi,India,30,3.33,24,Active
+SUP0084,"Dugar, Bhandari and Trivedi",Pune,Delhi,India,90,2.66,30,Expired
+SUP0085,Grewal Inc,Noida,Gujarat,India,30,3.28,10,Active
+SUP0086,"Bir, Keer and Raval",Bengaluru,Telangana,India,15,3.31,8,Active
+SUP0087,Koshy PLC,Ahmedabad,Uttar Pradesh,India,30,4.32,11,Active
+SUP0088,"Baral, Bumb and Saini",Pune,Telangana,India,15,,30,Expired
+SUP0089,"Virk, Mutti and Lal",Delhi,Karnataka,India,60,4.72,14,Active
+SUP0090,Murthy and Sons,Delhi,Karnataka,India,15,3.68,24,Active
+SUP0091,Randhawa-Deep,Ahmedabad,Delhi,India,45,2.8,30,Active
+SUP0092,"Mital, Shankar and Mutti",Hyderabad,Delhi,India,90,4.28,15,Active
+SUP0093,Andra Group,Mumbai,Maharashtra,India,45,4.4,8,Active
+SUP0094,"Chaudhry, Borah and Yogi",Mumbai,Maharashtra,India,90,3.9,16,Active
+SUP0095,Toor LLC,Chennai,Telangana,India,90,4.43,19,Active
+SUP0096,Palla Inc,Ahmedabad,Tamil Nadu,India,30,3.73,11,Active
+SUP0097,Pingle LLC,Ahmedabad,Maharashtra,India,90,3.81,28,Active
+SUP0098,Sarma PLC,Chennai,Telangana,India,15,3.57,24,Active
+SUP0099,"Mittal, Wadhwa and Anand",Noida,Delhi,India,15,2.56,26,Active
+SUP0100,"Mistry, Chawla and Desai",Nagpur,Delhi,India,60,2.77,13,Expired

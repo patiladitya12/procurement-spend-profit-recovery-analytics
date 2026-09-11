@@ -6,7 +6,7 @@
 
 
 
-An end-to-end procurement analytics project that analyzes supplier spending, purchase orders, invoices, delivery performance, supplier quality, pricing variance, payment performance, and potential procurement cost-recovery opportunities.
+An end-to-end procurement analytics project designed to identify supplier spending patterns, procurement risks, payment issues, pricing variances, delivery performance, supplier quality issues, and potential procurement cost-recovery opportunities.
 
 
 
@@ -34,7 +34,7 @@ The project was designed to answer key procurement questions:
 
 \- Which suppliers contribute the highest spend?
 
-\- How much spend occurs outside contracts?
+\- How much procurement spend occurs without a linked contract?
 
 \- Which suppliers have poor delivery or quality performance?
 
@@ -132,33 +132,37 @@ This page focuses on financial exposure and supplier risk:
 
 
 
-The analysis identified:
+| Metric | Result |
 
+|---|---:|
 
+| Total Procurement Spend | ₹3,430.23 Cr |
 
-Metric	Result
+| Purchase Orders | 2,500 |
 
-Total Procurement Spend	₹3,430.23 Cr
+| Suppliers | 100 |
 
-Purchase Orders	2,500
+| Potential Price Recovery | ₹260.19 Cr |
 
-Suppliers	100
+| Non-Contract Spend | 39.27% |
 
-&#x20;Potential Price Recovery	₹260.19 Cr
+| Average Late Delivery | 80.19% |
 
-Non-Contract Spend	39.27%
+| Average Rejection Rate | 3.19% |
 
-Average Late Delivery	80.19%
+| Total Invoice Amount | ₹2,711.63 Cr |
 
-Average Rejection Rate	3.19%
-
-Total Invoice Amount	₹2,711.63 Cr
-
-Outstanding Invoice Value	₹1,052.99 Cr
+| Outstanding Invoice Value | ₹1,052.99 Cr |
 
 
 
 > \*\*Note:\*\* The dataset is synthetic and these figures are for portfolio demonstration purposes.
+
+
+
+\---
+
+
 
 \# 🗄️ Data Model
 
@@ -166,21 +170,27 @@ Outstanding Invoice Value	₹1,052.99 Cr
 
 The procurement database contains eight related entities:
 
-\- Categories
 
-\- Suppliers
 
-\- Products
+| Entity | Purpose |
 
-\- Contracts
+|---|---|
 
-\- Purchase Orders
+| Categories | Procurement category information |
 
-\- Purchase Order Items
+| Suppliers | Supplier master and performance data |
 
-\- Invoices
+| Products | Product and baseline cost information |
 
-\- Payments
+| Contracts | Supplier contract information |
+
+| Purchase Orders | Procurement order transactions |
+
+| Purchase Order Items | Product-level PO transactions |
+
+| Invoices | Supplier invoice transactions |
+
+| Payments | Invoice payment transactions |
 
 
 
@@ -204,7 +214,7 @@ Implemented:
 
 
 
-\- INNER JOIN / LEFT JOIN
+\- INNER JOIN and LEFT JOIN
 
 \- GROUP BY
 
@@ -224,19 +234,19 @@ Implemented:
 
 \- Contract Compliance Analysis
 
-\- Delivery Performance
+\- Delivery Performance Analysis
 
 \- Supplier Quality Analysis
 
 \- Price Variance Analysis
 
-\- Invoice \& Payment Analysis
+\- Invoice and Payment Analysis
 
 \- Supplier Risk Classification
 
 
 
-\### Analytical Views
+\## Analytical Views
 
 
 
@@ -268,13 +278,17 @@ Key SQL views include:
 
 \- `vw\_invoice\_analytics`
 
+
+
 \---
+
+
 
 \# 🐍 Python \& Pandas Analysis
 
 
 
-Python was used for data profiling, quality analysis, business analysis, and validation.
+Python and Pandas were used for data profiling, quality analysis, business analysis, validation, and visualization.
 
 
 
@@ -306,7 +320,17 @@ Implemented:
 
 
 
-Invoice-to-PO validation reconciles invoice amounts against the corresponding purchase-order line-item values to identify potential mismatches.
+\### Invoice-to-PO Validation
+
+
+
+Invoice amounts were reconciled against the corresponding purchase-order line-item values to identify potential invoice-to-PO mismatches.
+
+
+
+\---
+
+
 
 \# 🤖 Machine Learning
 
@@ -336,6 +360,8 @@ Potential anomalies are flagged for further investigation and are \*\*not automa
 
 \---
 
+
+
 \## K-Means — Supplier Segmentation
 
 
@@ -352,15 +378,21 @@ K-Means clustering was used to segment suppliers based on procurement characteri
 
 \- Rejected Quantity
 
-THe segmentation helps identify groups of suppliers with similar procurement behavior.
+
+
+The segmentation helps identify groups of suppliers with similar procurement behavior.
+
+
 
 \---
+
+
 
 \# 💡 Key Business Insights
 
 
 
-The analysis identified several procurement improvement opportunities:
+The analysis identified several procurement improvement opportunities.
 
 
 
@@ -428,27 +460,29 @@ Invoice-to-PO reconciliation and Isolation Forest anomaly detection help identif
 
 
 
-Area	            Technologies
+| Area | Technologies |
 
-Programming	    Python
+|---|---|
 
-Data Analysis	    Pandas , Numpy
+| Programming | Python |
 
-Database	    MYSQL
+| Data Analysis | Pandas, NumPy |
 
-Querying	    SQL
+| Database | MySQL |
 
-Machine Learning    Scikit-learn
+| Querying | SQL |
 
-Visualization	    Matplotlib
+| Machine Learning | Scikit-learn |
 
-BI	            Power BI
+| Visualization | Matplotlib |
 
-BI Calculations	    DAX
+| Business Intelligence | Power BI |
 
-Notebook	    Jupyter
+| BI Calculations | DAX |
 
-Version Control	    Git \& GitHub
+| Notebook | Jupyter |
+
+| Version Control | Git \& GitHub |
 
 
 
@@ -527,6 +561,4 @@ Procurement-Analytics/
 ├── README.md
 
 └── .gitignore
-
-
 

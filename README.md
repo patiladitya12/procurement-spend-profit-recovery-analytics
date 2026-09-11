@@ -489,77 +489,42 @@ Invoice-to-PO reconciliation and Isolation Forest anomaly detection help identif
 ---
 
 
-
 # 📁 Project Structure
 
-
-
 ```text
-
 Procurement-Analytics/
-
-â”‚
-
-â”œâ”€â”€ data/
-
-â”‚   â”œâ”€â”€ raw/
-
-â”‚   â””â”€â”€ processed/
-
-â”‚
-
-â”œâ”€â”€ notebooks/
-
-â”‚   â””â”€â”€ 01_procurement_eda.ipynb
-
-â”‚
-
-â”œâ”€â”€ powerbi/
-
-â”‚   â””â”€â”€ Procurement_Analytics_Dashboard.pbix
-
-â”‚
-
-â”œâ”€â”€ reports/
-
-â”‚   â””â”€â”€ data_dictionary.md
-
-â”‚
-
-â”œâ”€â”€ screenshots/
-
-â”‚   â”œâ”€â”€ executive_dashboard.png
-
-â”‚   â””â”€â”€ financial_supplier_risk.png
-
-â”‚
-
-â”œâ”€â”€ sql/
-
-â”‚   â”œâ”€â”€ 03_procurement_analysis.sql
-
-â”‚   â”œâ”€â”€ 04_analytical_views.sql
-
-â”‚   â”œâ”€â”€ 05_advanced_business_analysis.sql
-
-â”‚   â””â”€â”€ 06_final_analytical_datasets.sql
-
-â”‚
-
-â”œâ”€â”€ data_quality.py
-
-â”œâ”€â”€ generate_data.py
-
-â”œâ”€â”€ inspect_data.py
-
-â”œâ”€â”€ load_to_mysql.py
-
-â”œâ”€â”€ test_mysql_connection.py
-
-â”œâ”€â”€ requirements.txt
-
-â”œâ”€â”€ README.md
-
-â””â”€â”€ .gitignore
+|
++-- data/
+|   +-- raw/
+|   +-- processed/
+|
++-- notebooks/
+|   +-- 01_procurement_eda.ipynb
+|
++-- powerbi/
+|   +-- Procurement_Analytics_Dashboard.pbix
+|
++-- reports/
+|   +-- data_dictionary.md
+|
++-- screenshots/
+|   +-- executive_dashboard.png
+|   +-- financial_supplier_risk.png
+|
++-- sql/
+|   +-- 03_procurement_analysis.sql
+|   +-- 04_analytical_views.sql
+|   +-- 05_advanced_business_analysis.sql
+|   +-- 06_final_analytical_datasets.sql
+|
++-- data_quality.py
++-- generate_data.py
++-- inspect_data.py
++-- load_to_mysql.py
++-- test_mysql_connection.py
++-- requirements.txt
++-- README.md
++-- .gitignore
+```
 
 

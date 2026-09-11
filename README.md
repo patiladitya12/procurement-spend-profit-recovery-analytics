@@ -2,71 +2,169 @@
 
 
 
-\## Overview
+\## 📊 Executive Summary
 
 
 
-An end-to-end procurement analytics project designed to identify supplier spending patterns, procurement risks, payment issues, pricing variances, and potential cost-recovery opportunities.
+An end-to-end procurement analytics project that analyzes supplier spending, purchase orders, invoices, delivery performance, supplier quality, pricing variance, payment performance, and potential procurement cost-recovery opportunities.
 
 
 
-The project uses Python, MySQL, SQL, Machine Learning, Power BI, and DAX to transform procurement transactions into actionable business insights.
+The project demonstrates an end-to-end analytics workflow:
 
 
 
-\## Business Objectives
+\*\*Raw Data → MySQL → SQL Analysis → Python/Pandas → Machine Learning → Power BI → Business Insights\*\*
 
 
 
-\- Analyze supplier and category procurement spend
-
-\- Identify non-contract procurement spend
-
-\- Evaluate supplier delivery and quality performance
-
-\- Detect unusual invoice transactions
-
-\- Identify potential price-recovery opportunities
-
-\- Analyze invoice payment performance
-
-\- Classify supplier risk
-
-\- Build an executive procurement dashboard
+\---
 
 
 
-\## Technology Stack
+\## 🎯 Business Objectives
 
 
 
-\- Python
-
-\- Pandas
-
-\- NumPy
-
-\- MySQL
-
-\- SQL
-
-\- Scikit-learn
-
-\- Power BI
-
-\- DAX
-
-\- Jupyter Notebook
+The project was designed to answer key procurement questions:
 
 
 
-\## Data Model
+\- Where is procurement spend concentrated?
+
+\- Which suppliers contribute the highest spend?
+
+\- How much spend occurs outside contracts?
+
+\- Which suppliers have poor delivery or quality performance?
+
+\- Where are potential pricing-recovery opportunities?
+
+\- Which invoices require further investigation?
+
+\- Which suppliers represent higher procurement risk?
+
+\- What is the outstanding invoice exposure?
 
 
 
-The database contains:
+\---
 
 
+
+\# 📈 Power BI Dashboard
+
+
+
+\## Executive Procurement Dashboard
+
+
+
+!\[Executive Procurement Dashboard](screenshots/executive\_dashboard.png)
+
+
+
+The executive dashboard provides a high-level view of procurement performance including:
+
+
+
+\- Total Procurement Spend
+
+\- Purchase Order Count
+
+\- Supplier Count
+
+\- Potential Price Recovery
+
+\- Late Delivery Rate
+
+\- Rejection Rate
+
+\- Non-Contract Spend
+
+\- Top Suppliers
+
+\- Category Spend
+
+\- Top Product Recovery Opportunities
+
+\- Supplier Risk Distribution
+
+
+
+\---
+
+
+
+\## Financial \& Supplier Risk Dashboard
+
+
+
+!\[Financial \& Supplier Risk Dashboard](screenshots/financial\_supplier\_risk.png)
+
+
+
+This page focuses on financial exposure and supplier risk:
+
+
+
+\- Outstanding Invoice Value
+
+\- Total Invoice Amount
+
+\- Invoice Payment Performance
+
+\- Supplier Risk Filtering
+
+\- Supplier Risk Details
+
+\- Delivery Performance
+
+\- Rejection Rate
+
+
+
+\---
+
+
+
+\# 💰 Key Business Metrics
+
+
+
+The analysis identified:
+
+
+
+Metric	Result
+
+Total Procurement Spend	₹3,430.23 Cr
+
+Purchase Orders	2,500
+
+Suppliers	100
+
+&#x20;Potential Price Recovery	₹260.19 Cr
+
+Non-Contract Spend	39.27%
+
+Average Late Delivery	80.19%
+
+Average Rejection Rate	3.19%
+
+Total Invoice Amount	₹2,711.63 Cr
+
+Outstanding Invoice Value	₹1,052.99 Cr
+
+
+
+> \*\*Note:\*\* The dataset is synthetic and these figures are for portfolio demonstration purposes.
+
+\# 🗄️ Data Model
+
+
+
+The procurement database contains eight related entities:
 
 \- Categories
 
@@ -86,7 +184,19 @@ The database contains:
 
 
 
-\## SQL Analysis
+The data was generated as synthetic procurement transactions with realistic business scenarios and selected data-quality issues for analytical validation.
+
+
+
+\---
+
+
+
+\# 🔎 SQL Analysis
+
+
+
+SQL was used for data extraction, transformation, validation, and business analysis.
 
 
 
@@ -94,7 +204,9 @@ Implemented:
 
 
 
-\- JOINs
+\- INNER JOIN / LEFT JOIN
+
+\- GROUP BY
 
 \- Aggregations
 
@@ -102,31 +214,71 @@ Implemented:
 
 \- CTEs
 
-\- Window functions
+\- Window Functions
 
-\- Analytical views
+\- Analytical SQL Views
 
-\- Supplier spend analysis
+\- Supplier Spend Analysis
 
-\- Category spend analysis
+\- Category Spend Analysis
 
-\- Contract compliance analysis
+\- Contract Compliance Analysis
 
-\- Delivery performance analysis
+\- Delivery Performance
 
-\- Supplier quality analysis
+\- Supplier Quality Analysis
 
-\- Price variance analysis
+\- Price Variance Analysis
 
-\- Invoice and payment analysis
+\- Invoice \& Payment Analysis
 
-
-
-\## Python Analysis
+\- Supplier Risk Classification
 
 
 
-Python and Pandas were used for:
+\### Analytical Views
+
+
+
+Key SQL views include:
+
+
+
+\- `vw\_procurement\_spend`
+
+\- `vw\_supplier\_spend`
+
+\- `vw\_category\_spend`
+
+\- `vw\_contract\_spend`
+
+\- `vw\_delivery\_performance`
+
+\- `vw\_supplier\_quality`
+
+\- `vw\_price\_variance`
+
+\- `vw\_invoice\_payment`
+
+\- `vw\_supplier\_kpi`
+
+\- `vw\_procurement\_recovery`
+
+\- `vw\_supplier\_risk`
+
+\- `vw\_invoice\_analytics`
+
+\---
+
+\# 🐍 Python \& Pandas Analysis
+
+
+
+Python was used for data profiling, quality analysis, business analysis, and validation.
+
+
+
+Implemented:
 
 
 
@@ -140,145 +292,241 @@ Python and Pandas were used for:
 
 \- KPI calculation
 
-\- Supplier and category analysis
+\- Supplier analysis
 
-\- Invoice-to-PO validation
+\- Category analysis
 
 \- Price-recovery analysis
 
+\- Invoice-to-PO validation
 
+\- Exploratory Data Analysis
 
-\## Machine Learning
+\- Data visualization
 
 
 
-\### Isolation Forest — Invoice Anomaly Detection
+Invoice-to-PO validation reconciles invoice amounts against the corresponding purchase-order line-item values to identify potential mismatches.
 
+\# 🤖 Machine Learning
 
 
-Isolation Forest was used to identify potentially anomalous invoice transactions based on:
 
+\## Isolation Forest — Invoice Anomaly Detection
 
 
-\- Invoice amount
 
-\- Quantity
+Isolation Forest was applied to identify potentially anomalous invoice transactions using:
 
-\- Average unit price
 
-\- Purchase order value
 
+\- Invoice Amount
 
+\- Total Quantity
 
-Potential anomalies are flagged for further investigation and are not automatically considered fraudulent.
+\- Average Unit Price
 
+\- Purchase Order Value
 
 
-\### K-Means — Supplier Segmentation
 
+Potential anomalies are flagged for further investigation and are \*\*not automatically considered fraudulent\*\*.
 
 
-K-Means clustering was used to segment suppliers based on procurement characteristics such as:
 
+\---
 
+\## K-Means — Supplier Segmentation
 
-\- Spend
 
-\- Average unit price
 
-\- Purchase quantity
+K-Means clustering was used to segment suppliers based on procurement characteristics including:
 
-\- Rejected quantity
 
 
+\- Total Spend
 
-\## Power BI Dashboard
+\- Average Unit Price
 
+\- Purchase Quantity
 
+\- Rejected Quantity
 
-The dashboard contains two analytical pages.
+THe segmentation helps identify groups of suppliers with similar procurement behavior.
 
+\---
 
+\# 💡 Key Business Insights
 
-\### Executive Procurement Dashboard
 
 
+The analysis identified several procurement improvement opportunities:
 
-\- Total procurement spend
 
-\- Purchase order count
 
-\- Supplier count
+\### 1. Supplier Spend Concentration
 
-\- Potential price recovery
 
-\- Late delivery rate
 
-\- Rejection rate
+A significant portion of procurement spend is concentrated among a smaller group of suppliers, creating opportunities for strategic negotiation and supplier-management initiatives.
 
-\- Non-contract spend
 
-\- Top suppliers
 
-\- Category spend
+\### 2. Non-Contract Procurement
 
-\- Top recovery opportunities
 
-\- Supplier risk distribution
 
+Approximately \*\*39.27% of procurement spend\*\* is associated with purchase orders without a linked contract, highlighting an opportunity to investigate contract coverage and procurement compliance.
 
 
-\### Financial \& Supplier Risk
 
+\### 3. Delivery Performance
 
 
-\- Outstanding invoice value
 
-\- Total invoice amount
+The overall late-delivery rate is approximately \*\*80.19%\*\*, indicating significant supplier delivery-performance concerns.
 
-\- Invoice payment performance
 
-\- Supplier risk filtering
 
-\- Supplier risk details
+\### 4. Pricing Opportunities
 
-\- Delivery performance
 
-\- Rejection rate
 
+Potential price-recovery opportunities were identified by comparing transaction unit prices against product baseline costs.
 
 
-\## Key Business Insights
 
+The modeled opportunity is approximately \*\*₹260.19 Cr\*\*.
 
 
-The analysis identified:
 
+These figures represent potential opportunities rather than guaranteed savings and require commercial validation.
 
 
-\- Significant procurement spend concentration among top suppliers
 
-\- High non-contract procurement exposure
+\### 5. Supplier Risk
 
-\- High delivery lateness
 
-\- Supplier quality differences
 
-\- Significant modeled price-recovery opportunities
+Supplier risk classification combines delivery and rejection performance to identify suppliers requiring greater management attention.
 
-\- Supplier risk differences based on delivery and quality performance
 
-\- Potentially anomalous invoice transactions requiring investigation
 
+\### 6. Invoice Risk
 
 
-\## Important Note
 
+Invoice-to-PO reconciliation and Isolation Forest anomaly detection help identify transactions that may require additional investigation.
 
 
-The procurement dataset is synthetic and was generated for portfolio demonstration purposes.
 
+\---
 
 
-Potential recovery figures represent modeled procurement savings opportunities and should be validated against contracts, market prices, taxes, freight, quality specifications, currency effects, and other commercial factors before implementation.
+
+\# 🛠️ Technology Stack
+
+
+
+Area	            Technologies
+
+Programming	    Python
+
+Data Analysis	    Pandas , Numpy
+
+Database	    MYSQL
+
+Querying	    SQL
+
+Machine Learning    Scikit-learn
+
+Visualization	    Matplotlib
+
+BI	            Power BI
+
+BI Calculations	    DAX
+
+Notebook	    Jupyter
+
+Version Control	    Git \& GitHub
+
+
+
+\---
+
+
+
+\# 📁 Project Structure
+
+
+
+```text
+
+Procurement-Analytics/
+
+│
+
+├── data/
+
+│   ├── raw/
+
+│   └── processed/
+
+│
+
+├── notebooks/
+
+│   └── 01\_procurement\_eda.ipynb
+
+│
+
+├── powerbi/
+
+│   └── Procurement\_Analytics\_Dashboard.pbix
+
+│
+
+├── reports/
+
+│   └── data\_dictionary.md
+
+│
+
+├── screenshots/
+
+│   ├── executive\_dashboard.png
+
+│   └── financial\_supplier\_risk.png
+
+│
+
+├── sql/
+
+│   ├── 03\_procurement\_analysis.sql
+
+│   ├── 04\_analytical\_views.sql
+
+│   ├── 05\_advanced\_business\_analysis.sql
+
+│   └── 06\_final\_analytical\_datasets.sql
+
+│
+
+├── data\_quality.py
+
+├── generate\_data.py
+
+├── inspect\_data.py
+
+├── load\_to\_mysql.py
+
+├── test\_mysql\_connection.py
+
+├── requirements.txt
+
+├── README.md
+
+└── .gitignore
+
+
 
